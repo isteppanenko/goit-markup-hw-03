@@ -40,6 +40,8 @@ body {
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .section-btn {
 }
@@ -49,6 +51,7 @@ body {
   |============================
 */
 .header {
+  padding: 24px 0 24px 0;
 }
 .header-nav {
 }
@@ -102,6 +105,9 @@ body {
 
 .hero {
   background-color: var(--hero-bg-color);
+  width: 1440px;
+  height: 600px;
+  align-items: center;
 }
 .hero-title {
   font-size: 56px;
@@ -109,6 +115,8 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--hero-text-color);
+  margin: 0;
+  padding-top: 188px;
 }
 .hero-btn {
   font-family: inherit;
@@ -116,12 +124,13 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
   color: var(--hero-text-color);
   background-color: var(--hero-btm-bg-color);
   cursor: pointer;
+  display: inline-block;
+  padding: 16px 32px;
+  margin-top: 48px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -138,6 +147,10 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--secondary-text-color);
+  margin-top: 0;
+}
+.our-strengths {
+  padding-top: 120px;
 }
 .section-subtitle {
   font-style: normal;
@@ -146,6 +159,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  margin: 0;
 }
 .section-text {
   font-style: normal;
@@ -205,4 +219,18 @@ body {
 .portfolio-btm:focus {
   background-color: var(--portfolio-bg-btm-hover);
   color: var(--hover-portfolio-btm-color);
+}
+
+/**
+  |============================
+  | BLOCKS
+  |============================
+*/
+.container {
+  max-width: 1128px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.section-text-technologies {
+  margin: 0;
 }
