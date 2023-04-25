@@ -71,7 +71,7 @@ img {
 }
 /**
   |============================
-  | HEADER
+  | HEADER SECTION
   |============================
 */
 .header-page {
@@ -79,6 +79,7 @@ img {
 }
 .header-nav {
   display: flex;
+  align-items: center;
 }
 .site-nav {
   display: flex;
@@ -88,6 +89,7 @@ img {
   display: block;
   padding-bottom: 24px;
   padding-top: 24px;
+  margin-right: 76px;
 
   /* text */
   font-family: "Raleway", sans-serif;
@@ -107,7 +109,6 @@ img {
 .header-nav-menu {
   display: flex;
   gap: 40px;
-  margin-left: 76px;
 }
 
 .header-nav-menu a {
@@ -163,7 +164,7 @@ img {
 
 /**
   |============================
-  | MAIN
+  | MAIN SECTION
   |============================
 */
 
@@ -255,7 +256,7 @@ img {
 
 /**
   |============================
-  | FOOTER
+  | FOOTER SECTION
   |============================
 */
 .footer {
@@ -281,9 +282,10 @@ img {
 
 /**
   |============================
-  | Portfolio
+  | Portfolio page
   |============================
 */
+
 .portfolio-btm {
   /* text */
   font-family: inherit;
@@ -297,16 +299,9 @@ img {
 
   cursor: pointer;
 }
+
 .portfolio-btm:hover,
 .portfolio-btm:focus {
   background-color: var(--portfolio-bg-btm-hover);
   color: var(--hover-portfolio-btm-color);
-}
-
-/**
-  |============================
-  | BLOCKS
-  |============================
-*/
-.section-text-technologies {
 }
