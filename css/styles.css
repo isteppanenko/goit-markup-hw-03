@@ -13,6 +13,24 @@ body {
   | BASE STYLES
   |============================
 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
 :root {
   /* background-color */
   --primary-bg-color: #ffffff;
@@ -43,6 +61,12 @@ body {
   padding: 0;
   margin: 0;
 }
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+}
+.logo {
+}
 .section-btn {
 }
 /**
@@ -50,47 +74,87 @@ body {
   | HEADER
   |============================
 */
-.header {
-  padding: 24px 0 24px 0;
+.header-page {
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-nav {
+  display: flex;
 }
+.site-nav {
+  display: flex;
+}
+/* LOGO */
 .header-nav-logo {
+  display: block;
+  padding-bottom: 24px;
+  padding-top: 24px;
+
+  /* text */
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
   color: var(--logo-color);
 }
 .header-logo-studio {
   color: var(--logo-color-studio);
 }
+
+/* MENU */
 .header-nav-menu {
+  display: flex;
+  gap: 40px;
+  margin-left: 76px;
 }
+
+.header-nav-menu a {
+  display: block;
+}
+
+.nav-menu .header-nav-link {
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
 .header-nav-link {
+  /* text */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color-links);
 }
+
 .header-nav-link:hover,
 .header-nav-link:focus {
   color: var(--hover-color-text-link);
 }
 
+/* CONTACTS */
 .header-contacts {
-  font-style: normal;
+  margin-left: auto;
 }
+
 .header-list {
+  display: flex;
+  gap: 40px;
 }
+
 .header-contacts-list .header-contact-link {
+  /* text */
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-color);
+}
+
+.header-contacts-list a {
+  display: block;
+  padding-bottom: 24px;
+  padding-top: 24px;
 }
 .header-contact-link:hover,
 .header-contact-link:focus {
@@ -109,36 +173,45 @@ body {
   height: 600px;
   align-items: center;
 }
+
 .hero-title {
+  /* text */
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+
   color: var(--hero-text-color);
-  margin: 0;
-  padding-top: 188px;
 }
+
 .hero-btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 16px 32px;
+  margin-top: 48px;
+
+  /* text */
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+
   color: var(--hero-text-color);
   background-color: var(--hero-btm-bg-color);
-  cursor: pointer;
-  display: inline-block;
-  padding: 16px 32px;
-  margin-top: 48px;
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--hero-btm-bg-hover);
 }
+
 .section {
 }
+
 .section-title {
+  /* text */
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -146,27 +219,31 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+
   color: var(--secondary-text-color);
-  margin-top: 0;
 }
+
 .our-strengths {
-  padding-top: 120px;
 }
+
 .section-subtitle {
+  /* text */
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
   color: var(--secondary-text-color);
-  margin: 0;
 }
 .section-text {
+  /* text */
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
   color: var(--primary-color);
 }
 .section-team {
@@ -185,12 +262,14 @@ body {
   background-color: var(--footer-bg-color);
 }
 .footer-logo {
+  /* text */
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
   color: var(--logo-color);
 }
 .footer-logo-studio {
@@ -206,13 +285,16 @@ body {
   |============================
 */
 .portfolio-btm {
+  /* text */
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+
   background-color: var(--portfolio-bg-btm-color);
   color: var(--portfolio-btm-text-color);
+
   cursor: pointer;
 }
 .portfolio-btm:hover,
@@ -226,11 +308,5 @@ body {
   | BLOCKS
   |============================
 */
-.container {
-  max-width: 1128px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
 .section-text-technologies {
-  margin: 0;
 }
