@@ -33,6 +33,7 @@ img {
 }
 :root {
   /* background-color */
+
   --primary-bg-color: #ffffff;
   --hero-btm-bg-color: #4d5ae5;
   --hero-btm-bg-hover: #404bbf;
@@ -42,6 +43,7 @@ img {
   --portfolio-bg-btm-color: #f4f4fd;
   --portfolio-bg-btm-hover: #404bbf;
   /* color text */
+
   --hover-portfolio-btm-color: #ffffff;
   --footer-logo-color: #f4f4fd;
   --hero-text-color: #ffffff;
@@ -52,6 +54,9 @@ img {
   --hover-color-text-link: #404bbf;
   --secondary-text-color: #2e2f42;
   --portfolio-btm-text-color: #4d5ae5;
+
+  /* border color  */
+  --header-bottom-border-color: #e7e9fc;
 }
 .link {
   text-decoration: none;
@@ -66,17 +71,18 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
-.logo {
+.section {
+  padding-bottom: 188px;
+  padding-top: 188px;
 }
-.section-btn {
-}
+
 /**
   |============================
   | HEADER SECTION
   |============================
 */
 .header-page {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--header-bottom-border-color);
 }
 .header-nav {
   display: flex;
@@ -170,13 +176,17 @@ img {
 */
 
 .hero {
-  background-color: var(--hero-bg-color);
-  width: 1440px;
-  height: 600px;
   align-items: center;
+
+  background-color: var(--hero-bg-color);
 }
 
 .hero-title {
+  max-width: 496px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+
   /* text */
   font-size: 56px;
   line-height: 1.07;
@@ -187,10 +197,15 @@ img {
 }
 
 .hero-btn {
-  display: inline-block;
+  display: block;
   cursor: pointer;
+  min-width: 169px;
   padding: 16px 32px;
-  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+
+  min-width: 169px;
+  height: 56px;
 
   /* text */
   font-family: inherit;
@@ -202,6 +217,10 @@ img {
 
   color: var(--hero-text-color);
   background-color: var(--hero-btm-bg-color);
+
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -209,9 +228,10 @@ img {
   background-color: var(--hero-btm-bg-hover);
 }
 
-.section {
+.strengths-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
-
 .section-title {
   /* text */
   font-style: normal;
@@ -225,7 +245,15 @@ img {
   color: var(--secondary-text-color);
 }
 
+/**
+  |============================
+  | OUR STRENGTHS SECTION
+  |============================
+*/
+
 .our-strengths {
+  display: flex;
+  gap: 24px;
 }
 
 .section-subtitle {
@@ -236,8 +264,29 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
 
+  margin-bottom: 8px;
+
   color: var(--secondary-text-color);
 }
+
+/**
+  |============================
+  | FEATURES SECTION
+  |============================
+*/
+.features-section {
+  padding-bottom: 120px;
+}
+.features-list {
+  display: flex;
+  margin-top: 72px;
+  gap: 24px;
+}
+
+.features-list .features-item {
+  border: 1px solid #e7e9fc;
+}
+
 .section-text {
   /* text */
   font-style: normal;
@@ -246,13 +295,47 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 
+  min-width: 264px;
+
   color: var(--primary-color);
 }
+
+/**
+  |============================
+  | OUR TEAM SECTION
+  |============================
+*/
+
+.team-info {
+  display: flex;
+  gap: 24px;
+}
+.team-conteiner .section-title {
+  padding-bottom: 72px;
+}
+.team-list .section-subtitle {
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
 .section-team {
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: var(--team-section-bg-color);
 }
 .team-list {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+
+  width: calc((100% - 48px) / 3);
   background-color: var(--primary-bg-color);
+
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /**
@@ -261,6 +344,9 @@ img {
   |============================
 */
 .footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
   background-color: var(--footer-bg-color);
 }
 .footer-logo {
@@ -278,6 +364,14 @@ img {
   color: var(--footer-logo-color);
 }
 .footer-text {
+  width: 264px;
+  margin-top: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
   color: var(--footer-logo-color);
 }
 
