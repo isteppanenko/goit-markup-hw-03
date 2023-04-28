@@ -315,13 +315,16 @@ img {
   gap: 24px;
 }
 .team-conteiner .section-title {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .team-list .section-subtitle {
   margin-top: 32px;
   margin-bottom: 8px;
 }
 
+.team-img {
+  flex-basis: calc((100% - 72px) / 4);
+}
 .text-container {
   padding: 32px 16px;
 }
