@@ -255,6 +255,8 @@ img {
   display: flex;
   gap: 24px;
 }
+.strengths-item {
+}
 
 .section-subtitle {
   /* text */
@@ -282,7 +284,9 @@ img {
   margin-top: 72px;
   gap: 24px;
 }
-
+.features-container .section-title {
+  margin-bottom: 72px;
+}
 .features-list .features-item {
   border: 1px solid #e7e9fc;
 }
@@ -318,6 +322,10 @@ img {
   margin-bottom: 8px;
 }
 
+.text-container {
+  padding: 32px 16px;
+}
+
 .section-team {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -350,6 +358,9 @@ img {
   background-color: var(--footer-bg-color);
 }
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+
   /* text */
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -365,7 +376,6 @@ img {
 }
 .footer-text {
   width: 264px;
-  margin-top: 16px;
 
   font-weight: 400;
   font-size: 16px;
