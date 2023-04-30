@@ -450,6 +450,9 @@ img {
 }
 .main-list .item-list {
   width: calc((100% - 48px) / 3);
+
+  border-top: none;
+  border: 1px solid var(--portfolio-border-color);
 }
 .text-list {
   display: flex;
