@@ -405,11 +405,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+
   gap: 24px;
+  margin-bottom: 72px;
 }
 .portfolio-btm {
   padding: 12px 24px;
-  margin-bottom: 72px;
 
   /* text */
   font-family: inherit;
@@ -423,9 +424,9 @@ img {
 
   cursor: pointer;
 
-  border: 1px solid var(var(--portfolio-border-color));
   border-radius: 4px;
   border: none;
+  border: 1px solid var(--portfolio-border-color);
 }
 
 .portfolio-btm:hover,
@@ -442,6 +443,7 @@ img {
 .main-list {
   display: flex;
   flex-wrap: wrap;
+
   column-gap: 24px;
   row-gap: 48px;
 }
@@ -454,7 +456,10 @@ img {
 .text-list {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  padding: 32px 16px;
   flex-wrap: wrap;
+  align-items: center;
+
+  padding: 32px 16px;
+
+  border: 1px solid var(--portfolio-border-color);
 }
